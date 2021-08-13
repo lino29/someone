@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>For You |</title>
+  <title>Ndy14 | HBD</title>
   <!-- BOOTSTRAP CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
@@ -23,6 +23,12 @@
 
   <!-- MY CSS -->
   <link rel="stylesheet" href="css/style.css" />
+
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
 <body>
@@ -93,40 +99,12 @@
             <h2>About Web</h2>
           </div>
         </div>
-        <div class="row justify-content-start fs-5 mt-3">
-          <div class="col-md-4">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Facere, similique?
-            </p>
-          </div>
-          <div class="col-md-4">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id
-              vitae, neque non recusandae earum.
-            </p>
-          </div>
-        </div>
         <div class="row justify-content-center fs-5 text-center mt-3">
           <div class="col-4">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, rerum.
-            </p>
+            <p class="kalimat"></p>
           </div>
           <div class="col-4">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Ratione, odio.
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-end fs-5 text-end mt-3">
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="kalimat"></p>
           </div>
         </div>
       </div>
@@ -314,8 +292,17 @@
       });
       gsap.to(".textG", {
         duration: 4,
-        text: "Your Topic Here"
-      })
+        text: "CCMWagiu"
+      });
+      gsap.to(".kalimat", {
+        duration: 8,
+        text: "Everyone has a characteristic in making other people happy, but the most important thing is where the person sincerely does this"
+      });
+      gsap.to(".kalimat2", {
+        delay: 8,
+        duration: 8,
+        text: "In your current age, it is hoped that you can always develop intellectually and also grow in faith."
+      });
     </script>
 
     <script>
@@ -342,6 +329,7 @@
         img.dataset.aos = 'fade-down';
         img.dataset.aosDelay = i * 100;
         img.dataset.aosDuration = 1500;
+        img.dataset.aosEasing = "linear";
 
       });
       const logoS = document.querySelectorAll('.mogos');
